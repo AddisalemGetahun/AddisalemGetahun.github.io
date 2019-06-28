@@ -1,0 +1,70 @@
+
+<!doc type html>
+
+<head>
+	    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="author" content="Ayele Bedada">
+    <title>EiABC STUDENT Final - Exam Given File</title>
+
+</head>
+
+<link rel="stylesheet" href="eiabcinteractivecss.css"/>
+
+<body>
+
+<h1>EiABC BUILDING FUNCTION MAP SVG INTERACTIVE EXAM</h1>
+
+<P>The Ethiopian Institute of Architecture Building Construction and City Development,EiABC, 
+    is located in Addis Ababa Lideta sub-city, adjacent to the main east-west artery of the city of Addis Ababa. 
+    In recent years the institute acquired new buildings that include the Urban Building situated in the east 
+    section of the institute's compound, Container Building situated adjacent to the institute's sport field and 
+    the New Building(White House) located on the north section of the institute's compound. 
+    Among these buildings specifically the EBuilding (white house or the new building) comprises class rooms, lecture
+    halls, studios, staff rooms, laboratories and Staff cafeteria.</P>
+  
+<h2>Interactive Map of EiABC Building Use </h2>
+
+<div class="svgClass">
+
+<!-- Place the svg / xml code you exported from Adobe illustrator in the following svg tag element  -->
+
+<svg  x="0px" y="0px" viewBox="0 0 528.12 435.78" style="enable-background:new 0 0 530 430;" xml:space="preserve">
+    
+</svg>
+
+
+</div>   
+
+<br><br><br><br><br><br>
+<div class="buttons" id="sidebar" >
+
+	<button id="residential">RESIDENTIAL</button><br><br>
+	<button id="service">SERVICE</button><br><br>
+	<button id="mixed">MIXED</button><br><br>
+	<button id="office">OFFICE</button><br><br>
+</div>
+
+<script>
+
+const residentialButton = document.querySelector('#residential');
+const serviceButton = document.querySelector('#service');
+const mixedButton = document.querySelector('#mixed');
+const officeButton = document.querySelector('#office');
+
+
+const residential = document.querySelector('.residential');
+const service = document.querySelector('.service');
+const mixed = document.querySelector('.mixed');
+const office = document.querySelector('.office');
+
+
+residentialButton.addEventListener('click', e =>{ residential.classList.toggle('removed');});
+serviceButton.addEventListener('click', e =>{ service.classList.toggle('removed');});
+mixedButton.addEventListener('click', e =>{ mixed.classList.toggle('removed');});
+officeButton.addEventListener('click', e =>{ office.classList.toggle('removed');});
+
+</script>
+
+
+</body>
